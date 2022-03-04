@@ -1,0 +1,14 @@
+{
+  "name": "esbuild-solidjs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.25",
+    "solid-js": "^1.3.10"
+  },
+  "scripts": {
+    "build-with-react": "esbuild index.tsx --bundle --outfile=public/app.js --servedir=public --target=chrome58,firefox57,safari11,edge18",
+    "build-with-document": "esbuild index.tsx --bundle --outfile=public/app.js --servedir=public --target=chrome58,firefox57,safari11,edge18 --jsx-factory=document.createElement"
+  }
+}
